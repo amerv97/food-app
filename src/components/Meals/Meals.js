@@ -3,12 +3,12 @@ import AvailableMeals from "./AvailableMeals";
 import { Fragment } from "react";
 
 const Meals = () => {
-    return ( 
+  return (
     <Fragment>
-        <MealsSummary />
-        <AvailableMeals />
+      <MealsSummary />
+      <AvailableMeals />
     </Fragment>
-    );
+  );
 };
 
 export default Meals;
