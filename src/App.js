@@ -27,6 +27,7 @@ function App() {
         <Meals />
       </main>
     </CartProvider>
+    // Wraovali smo sve komponente, kako bi iste imale pristup podacima iz CardProvidera kojeg smo kreirali u store folder-u
   );
 }
 
