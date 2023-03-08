@@ -11,14 +11,18 @@ const Cart = (props) => {
   );
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
+      {/* dodajemo onClose kako bi zatvorili Cart na klik u prazno */}
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
         <span>35.62</span>
       </div>
       <div className={classes.actions}>
-        <button className={classes["button-alt"]}>Close</button>
+        <button className={classes["button--alt"]} onClick={props.onClose}>
+          Close
+        </button>
+        {/* onClick koristimo kako bi upotrjebili hideCartHandler funkciju */}
         <button className={classes.button}>Order</button>
       </div>
     </Modal>
