@@ -12,7 +12,7 @@ const HeaderCartButton = (props) => {
     return curNumber + item.amount;
   }, 0);
 
-  const { items } = cartCtx;
+  // const { items } = cartCtx;
 
   const btnClasses = `${classes.button} ${
     btnIsHighlighted ? classes.bump : ""
@@ -29,7 +29,7 @@ const HeaderCartButton = (props) => {
     return () => {
       clearTimeout(timer);
     };
-  }, [items]);
+  }, [cartCtx]);
 
   return (
     <button className={btnClasses} onClick={props.onClick}>
